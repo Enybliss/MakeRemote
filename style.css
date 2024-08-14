@@ -1,0 +1,190 @@
+body{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    
+}
+
+.navagation{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+
+nav{
+    /* background-color: red; */
+    margin: 0px 20px;
+
+}
+}
+
+.logoNav{
+    display: flex;
+}
+
+.loginBtn{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.loginBtn button{
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.learn {
+background: black;
+height: 55px;
+width: 140px;
+border-radius: 13px;
+color: white ;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width: 500px;
+    padding: 0px 150px;
+}
+.iconMenu{
+    display: none;
+}
+.imgBox img{
+    width: 300px;
+    height: 380px;
+    margin-left: 200px;
+}
+
+.textBox{
+    align-items: center;
+    
+
+  
+}
+p{
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+width: 400px;
+
+}
+
+h1{
+    font-family: Poppins;
+font-size: 52px;
+font-weight: 700;
+line-height: 50px;
+text-align: left;
+
+}
+/* .learn{
+    width: max-content;
+    padding-left: 50px;
+    background-color: black;
+    text-decoration: white;
+    
+} */
+
+.images img{
+    gap: 40px;
+    width: 60px;
+    padding: 15px;
+    
+}
+
+/* @media (max-width: 768px) {
+    .navagation{
+        display: none;
+    }
+    .loginBtn{
+        display: none;
+    }
+    .iconMenu{
+        display: flex;
+        
+    }
+} */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navagation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .iconMenu {
+        display: block; /* Show iconMenu for mobile devices */
+    }
+
+    .loginBtn {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .textBox {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .imgBox img {
+        max-width: 100%;
+    }
+
+    .images {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .textBox h1 {
+        font-size: 36px;
+    }
+
+    .textBox p {
+        font-size: 16px;
+    }
+
+    .textBox .learn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .images img {
+        width: 80px;
+    }
+
+    .navagation {
+        display: none; /* Hide navigation links for very small screens */
+    }
+
+    .iconMenu {
+        display: block;
+    }
+}
